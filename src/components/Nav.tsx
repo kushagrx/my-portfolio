@@ -1,21 +1,24 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
-import Link from "next/link";
+// If you want internal routing with React Router:
+// import { Link } from "react-router-dom";
 
 export default function Nav() {
     const [scrolled, setScrolled] = useState(false);
+
     useEffect(() => {
         const onScroll = () => setScrolled(window.scrollY > 10);
         onScroll();
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
+
     return (
         <nav className={`fixed top-0 left-0 right-0 z-50 transition-all ${scrolled ? "bg-bg/70 backdrop-blur border-b border-white/10" : "bg-transparent"}`}>
             <div className="container-narrow flex items-center justify-between h-14">
-                <Link href="/kushagra-portfolio/public" className="font-semibold tracking-tight">Kushagra Bisht</Link>
+                {/* Use a normal <a> for now */}
+                <a href="/" className="font-semibold tracking-tight">Kushagra Bisht</a>
+                
                 <div className="flex items-center gap-4">
                     <a href="#experience" className="text-text-soft hover:text-text">Experience</a>
                     <a href="#projects" className="text-text-soft hover:text-text">Projects</a>
