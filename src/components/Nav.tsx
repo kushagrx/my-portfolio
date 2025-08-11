@@ -15,7 +15,7 @@ export default function Nav() {
     return (
         <nav className={`fixed top-0 left-0 right-0 z-50 transition-all ${scrolled ? "bg-bg/70 backdrop-blur border-b border-white/10" : "bg-transparent"}`}>
             <div className="container-narrow flex items-center justify-between h-14">
-                <Link href="/kushagra-portfolio/public" className="font-semibold tracking-tight">Kushagra</Link>
+                <Link href="/kushagra-portfolio/public" className="font-semibold tracking-tight">Kushagra Bisht</Link>
                 <div className="flex items-center gap-4">
                     <a href="#experience" className="text-text-soft hover:text-text">Experience</a>
                     <a href="#projects" className="text-text-soft hover:text-text">Projects</a>

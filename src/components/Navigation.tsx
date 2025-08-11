@@ -36,7 +36,7 @@ const Navigation = () => {
             whileHover={{ scale: 1.05 }}
             className="font-bold text-xl bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent"
           >
-            Kushagra
+            Kushagra Bisht
           </motion.div>
 
           {/* Desktop Navigation */}

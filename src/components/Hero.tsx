@@ -141,7 +141,6 @@ const Hero = () => {
             transition={{ duration: 2, repeat: Infinity }}
             className="text-slate-400"
           >
-            <ChevronDown size={24} />
           </motion.div>
         </motion.div>
       </div>
