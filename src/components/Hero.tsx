@@ -1,37 +1,29 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { ChevronDown, Code, Cloud, Smartphone } from 'lucide-react';
-
-const Hero = () => {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3,
-      },
+import { motion, Variants } from 'framer-motion';
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.3,
     },
-  };
+  },
+};
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        ease: 'easeOut',
-      },
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: 'easeOut',
     },
-  };
+  },
+};
 
-  const skills = [
-    { icon: <Cloud className="w-6 h-6" />, label: 'Cloud & DevOps', color: 'from-blue-400 to-cyan-400' },
-    { icon: <Code className="w-6 h-6" />, label: 'Full Stack', color: 'from-purple-400 to-pink-400' },
-    { icon: <Smartphone className="w-6 h-6" />, label: 'Mobile Dev', color: 'from-green-400 to-emerald-400' },
-  ];
-
+const Hero: React.FC = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background gradient */}
