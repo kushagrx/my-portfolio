@@ -87,7 +87,7 @@ const Hero = () => {
             variants={itemVariants}
             className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
           >
-            Cloud & DevOps Enthusiast • Full Stack Developer • Mobile App Creator
+            Cloud & DevOps Enthusiast • Full Stack Developer • Mobile App Dev
           </motion.p>
 
           <motion.p

@@ -5,8 +5,7 @@ import Nav from "../components/Nav";
 export const metadata: Metadata = {
     title: "Kushagra Bisht - Portfolio",
     description:
-        "Cloud & DevOps enthusiast with full-stack and mobile experience. AI summarization, scalable systems, and clean UX.",
-    icons: [{ rel: "icon", url: "/favicon.ico" }],
+    "Cloud & DevOps enthusiast with full-stack and mobile experience. AI summarization, scalable systems, and clean UX."
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
