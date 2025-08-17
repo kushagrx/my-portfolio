@@ -84,6 +84,16 @@ export const PROJECTS = [
             "Custom fonts, dark theme, and intuitive FAB for task entry",
         ],
     },
+    {
+        name: "Subscription Tracker API",
+        stack: ["Node.js", "Express.js", "MongoDB", "REST API"],
+        description:
+            "Comprehensive API for tracking and managing subscription services with automated billing reminders and expense analytics.",
+        highlights: [
+            "RESTful API with full CRUD operations for subscription management",
+            "Automated notification system for upcoming renewals",
+        ],
+    },
 ];
 
 export const CERTS = [

@@ -5,18 +5,18 @@ import { GraduationCap, Award, Calendar } from 'lucide-react';
 const Education = () => {
   const education = [
     {
-      school: "UPES, Dehradun",
-      degree: "B.Tech in CSE - CTAG",
-      period: "Aug 2021 – May 2025",
+      school: "University of Petroleum and Energy Sciences, Dehradun",
+      degree: "B.Tech CSE in Cloud Computing",
+      period: "Aug 2022 – May 2026",
       type: "University",
-      color: "from-purple-500 to-pink-500",
+      color: "from-gray-700 to-cyan-500",
     },
     {
-      school: "Apeejay School, Pitampura, Delhi",
-      degree: "CBSE Class XII (95 percentile), Class X (88 percentile)",
-      period: "2019 - 2021",
+      school: "Apeejay School Pitampura, Delhi 110034",
+      degree: "CBSE Class XII 75% , Class X 88%",
+      // period: "2022 – May 2026",
       type: "High School",
-      color: "from-blue-500 to-cyan-500",
+      color: "from-gray-800 to-gray-600",
     },
   ];
 
@@ -59,11 +59,11 @@ const Education = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-gray-300 to-cyan-400 bg-clip-text text-transparent">
               Education & Certifications
             </span>
           </h2>
-          <p className="text-xl text-slate-400">Academic background and professional certifications</p>
+          <p className="text-xl text-gray-400">Academic background and professional certifications</p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -75,7 +75,7 @@ const Education = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-              <GraduationCap className="w-6 h-6 text-purple-400" />
+              <GraduationCap className="w-6 h-6 text-cyan-400" />
               Education
             </h3>
             <div className="space-y-6">

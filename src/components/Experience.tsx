@@ -13,7 +13,7 @@ const Experience = () => {
         "Handled unstructured data and delivered customized, accurate summaries at scale using transformer-based models.",
       ],
       tags: ["NLP", "Transformers", "Cloud", "AI"],
-      color: "from-blue-500 to-cyan-500",
+      color: "from-gray-700 to-cyan-500",
     },
     {
       company: "BioPay",
@@ -24,7 +24,7 @@ const Experience = () => {
         "Integrated RESTful endpoints enabling secure data flows for 1,000+ real-time transactions.",
       ],
       tags: ["Node.js", "Express", "Performance", "REST"],
-      color: "from-purple-500 to-pink-500",
+      color: "from-gray-800 to-gray-600",
     },
   ];
 
@@ -61,11 +61,11 @@ const Experience = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-gray-300 to-cyan-400 bg-clip-text text-transparent">
               Experience
             </span>
           </h2>
-          <p className="text-xl text-slate-400">Internships and professional roles</p>
+          <p className="text-xl text-gray-400">Internships and professional roles</p>
         </motion.div>
 
         <motion.div

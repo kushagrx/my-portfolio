@@ -8,25 +8,25 @@ const Skills = () => {
       title: "Languages & Frameworks",
       icon: <Code className="w-6 h-6" />,
       skills: ["Python", "C++", "JavaScript", "HTML", "CSS", "React", "React Native", "Node.js", "Express.js", "Expo CLI"],
-      color: "from-purple-500 to-pink-500",
+      color: "bg-gray-700",
     },
     {
       title: "Cloud & DevOps",
       icon: <Cloud className="w-6 h-6" />,
       skills: ["AWS", "Docker", "Kubernetes", "CI/CD"],
-      color: "from-blue-500 to-cyan-500",
+      color: "bg-cyan-600",
     },
     {
       title: "Databases",
       icon: <Database className="w-6 h-6" />,
       skills: ["MySQL", "MongoDB", "SupaBase"],
-      color: "from-green-500 to-emerald-500",
+      color: "bg-gray-800",
     },
     {
       title: "Tools",
       icon: <Wrench className="w-6 h-6" />,
       skills: ["REST APIs", "Postman", "Git", "GitHub", "Vercel"],
-      color: "from-orange-500 to-red-500",
+      color: "bg-cyan-500",
     },
   ];
 
@@ -75,11 +75,11 @@ const Skills = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-gray-300 to-cyan-400 bg-clip-text text-transparent">
               Technical Skills
             </span>
           </h2>
-          <p className="text-xl text-slate-400">Technologies and tools I work with</p>
+          <p className="text-xl text-gray-400">Technologies and tools I work with</p>
         </motion.div>
 
         <motion.div
@@ -96,9 +96,6 @@ const Skills = () => {
               whileHover={{ scale: 1.02, y: -5 }}
               className="group relative"
             >
-              <div className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl blur-xl -z-10"
-                   style={{ background: `linear-gradient(to right, ${category.color.split(' ')[1]}, ${category.color.split(' ')[3]})` }} />
-              
               <div className="bg-slate-900/80 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 hover:border-slate-600/50 transition-all duration-300">
                 <div className="flex items-center gap-3 mb-6">
                   <h3 className="text-xl font-bold text-white">{category.title}</h3>
@@ -113,7 +110,7 @@ const Skills = () => {
                       key={skill}
                       variants={skillVariants}
                       whileHover={{ scale: 1.1, y: -2 }}
-                      className={`px-3 py-2 text-sm font-medium rounded-lg bg-gradient-to-r ${category.color} bg-opacity-10 text-white border border-current border-opacity-20 hover:bg-opacity-20 transition-all duration-300 cursor-default`}
+                      className={`px-3 py-2 text-sm font-medium rounded-lg ${category.color} bg-opacity-20 text-white border border-slate-600/30 hover:bg-opacity-30 transition-all duration-300 cursor-default`}
                     >
                       {skill}
                     </motion.span>
@@ -153,7 +150,7 @@ const Skills = () => {
                       <motion.path
                         d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                         fill="none"
-                        stroke="url(#gradient)"
+                        stroke="rgb(34 211 238)"
                         strokeWidth="2"
                         strokeDasharray={`${item.level}, 100`}
                         initial={{ strokeDasharray: "0, 100" }}
@@ -161,12 +158,6 @@ const Skills = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 2, delay: 0.5 }}
                       />
-                      <defs>
-                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" stopColor={item.color.split(' ')[1]} />
-                          <stop offset="100%" stopColor={item.color.split(' ')[3]} />
-                        </linearGradient>
-                      </defs>
                     </svg>
                     <div className="absolute inset-0 flex items-center justify-center">
                       <span className="text-2xl font-bold text-white">{item.level}%</span>
