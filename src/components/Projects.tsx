@@ -113,7 +113,7 @@ const Projects = () => {
             >
               {/* FIX: Corrected className syntax and removed incorrect style attribute */}
               <div
-                className={`absolute inset-0 bg-gradient-to-r ${project.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl blur-xl -z-10`}
+                className={`absolute inset-0 bg-gradient-to-r ${project.color} opacity-0 group-hover:opacity-15 transition-opacity duration-300 rounded-2xl blur-md -z-10`}
               />
               
               <div className="bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-6 h-full hover:border-slate-600/50 transition-all duration-300">
@@ -121,9 +121,9 @@ const Projects = () => {
                   {/* FIX: Corrected className syntax */}
                   <div className={`p-3 rounded-xl bg-gradient-to-r ${project.color} bg-opacity-20`}>
                     {/* FIX: Corrected className syntax. This is the main fix for icon visibility. */}
-                    <span className={`bg-gradient-to-r ${project.color} bg-clip-text text-transparent`}>
+                    <div className="text-white">
                       {project.icon}
-                    </span>
+                    </div>
                   </div>
                   <h3 className="text-xl font-bold text-white">
                     {project.name}
@@ -164,7 +164,7 @@ const Projects = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     // FIX: Corrected className syntax
-                    className={`flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${project.color} bg-opacity-20 text-white rounded-lg border border-current border-opacity-20 hover:bg-opacity-30 transition-all duration-300`}
+                    className="flex items-center gap-2 px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg border border-cyan-500/30 transition-all duration-300"
                   >
                     <ExternalLink className="w-4 h-4" />
                     <span className="text-sm font-medium">View Project</span>

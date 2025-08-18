@@ -101,7 +101,7 @@ const Contact = () => {
               whileTap={{ scale: 0.95 }}
               className="group relative block"
             >
-              <div className={`absolute inset-0 bg-gradient-to-r ${contact.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl blur-xl -z-10`} />
+              <div className={`absolute inset-0 bg-gradient-to-r ${contact.color} opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-2xl blur-lg -z-10`} />
               
               <div className="bg-slate-900/80 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-6 hover:border-slate-600/50 transition-all duration-300 text-center">
                 <div className={`inline-flex p-4 rounded-xl bg-gradient-to-r ${contact.color} bg-opacity-20 mb-4`}>
