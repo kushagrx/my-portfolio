@@ -119,8 +119,8 @@ const Hero = () => {
               Experience
             </motion.a>
             <motion.a
-              href="/Kushagra_Bisht_resume.pdf"
-              download="Kushagra_Bisht_Resume.pdf"
+              href="/kushagra_bisht_resume.pdf"
+              download="kushagra_bisht_resume.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-3 border border-gray-600 rounded-lg font-semibold text-gray-300 hover:bg-gray-800 transition-all duration-300"

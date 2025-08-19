@@ -7,23 +7,23 @@ const Experience = () => {
     {
       company: "IBM",
       role: "Project Intern",
-      period: "Jun 2025 – Jul 2025",
+      period: "1st Jun 2025 – 31st Jul 2025",
       points: [
         "Developed an AI-powered summarization engine for a cloud knowledge management system.",
         "Handled unstructured data and delivered customized, accurate summaries at scale using transformer-based models.",
       ],
-      tags: ["NLP", "Transformers", "Cloud", "AI"],
+      tags: ["NLP", "Python transformers library", "AWS Cloud", "AI Text Summarization"],
       color: "from-gray-700 to-cyan-500",
     },
     {
       company: "BioPay",
       role: "Backend Developer Intern",
-      period: "Feb 2025 – Apr 2025",
+      period: "1st Feb 2025 – 13th Apr 2025",
       points: [
         "Built and optimized Node.js + Express.js APIs, reducing authentication request time by ~30% for biometric systems (Fujitsu PalmSecure, Mantra MFS110).",
         "Integrated RESTful endpoints enabling secure data flows for 1,000+ real-time transactions.",
       ],
-      tags: ["Node.js", "Express", "Performance", "REST"],
+      tags: ["Node.js", "Express.js", "JWT Authentication", "REST APIs"],
       color: "from-gray-800 to-gray-600",
     },
   ];
