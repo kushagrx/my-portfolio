@@ -8,25 +8,25 @@ const Skills = () => {
       title: "Languages & Frameworks",
       icon: <Code className="w-6 h-6" />,
       skills: ["Python", "C++", "JavaScript", "HTML", "CSS", "React", "React Native", "Node.js", "Express.js", "Expo CLI"],
-      color: "bg-gray-700",
+      color: "from-blue-500 to-purple-500",
     },
     {
       title: "Cloud & DevOps",
       icon: <Cloud className="w-6 h-6" />,
       skills: ["AWS", "Docker", "Kubernetes", "CI/CD"],
-      color: "bg-cyan-600",
+      color: "from-cyan-500 to-blue-500",
     },
     {
       title: "Databases",
       icon: <Database className="w-6 h-6" />,
       skills: ["MySQL", "MongoDB", "SupaBase"],
-      color: "bg-gray-800",
+      color: "from-green-500 to-emerald-500",
     },
     {
       title: "Tools",
       icon: <Wrench className="w-6 h-6" />,
       skills: ["REST APIs", "Postman", "Git", "GitHub", "Vercel"],
-      color: "bg-cyan-500",
+      color: "from-orange-500 to-red-500",
     },
   ];
 
@@ -93,12 +93,15 @@ const Skills = () => {
             <motion.div
               key={category.title}
               variants={categoryVariants}
-              whileHover={{ scale: 1.02, y: -5 }}
               className="group relative"
             >
               <div className="bg-slate-900/80 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 hover:border-slate-600/50 transition-all duration-300">
                 <div className="flex items-center gap-3 mb-6">
-                  {category.icon}
+                  <div className={`p-3 rounded-xl bg-gradient-to-r ${category.color} bg-opacity-20`}>
+                    <div className="text-white">
+                      {category.icon}
+                    </div>
+                  </div>
                   <h3 className="text-xl font-bold text-white">{category.title}</h3>
                 </div>
 
@@ -110,8 +113,7 @@ const Skills = () => {
                     <motion.span
                       key={skill}
                       variants={skillVariants}
-                      whileHover={{ scale: 1.1, y: -2 }}
-                      className={`px-3 py-2 text-sm font-medium rounded-lg ${category.color} bg-opacity-20 text-white border border-slate-600/30 hover:bg-opacity-30 transition-all duration-300 cursor-default`}
+                      className="px-3 py-2 text-sm font-medium rounded-lg bg-slate-800 text-white border border-slate-600/30 cursor-default"
                     >
                       {skill}
                     </motion.span>
