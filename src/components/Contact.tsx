@@ -75,11 +75,11 @@ const Contact = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-gray-300 to-cyan-400 bg-clip-text text-transparent">
-              Let's Connect
+              Connect With Me
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
+            I’m always open to discussing opportunities, contributing to impactful projects, or exchanging ideas about technology and innovation.
           </p>
         </motion.div>
 
@@ -125,11 +125,12 @@ const Contact = () => {
           className="mt-16 text-center"
         >
           <div className="bg-gradient-to-r from-purple-900/20 to-cyan-900/20 border border-purple-500/20 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to work together?</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Open to Opportunities</h3>
             <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
             </p>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Whether you're looking for an intern, have a project in mind, or want to discuss the latest in cloud technology and development, I'd love to hear from you.
+              Whether you’re seeking an intern, need support on a project, or want to explore ideas in cloud technology 
+              and software development, I’d be happy to connect.
             </p>
             <motion.a
               href="mailto:kushagrabisht10@gmail.com"
@@ -152,7 +153,7 @@ const Contact = () => {
           className="mt-16 pt-8 border-t border-gray-700/50 text-center"
         >
           <p className="text-gray-400">
-            © 2025 Kushagra Bisht.
+            © 2025 Kushagra Bisht · Let’s build something great together.
           </p>
         </motion.div>
       </div>
