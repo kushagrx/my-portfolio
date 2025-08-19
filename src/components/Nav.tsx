@@ -29,7 +29,7 @@ export default function Nav() {
                     <a href="https://github.com/kushagr-" target="_blank" rel="noreferrer" aria-label="GitHub">
                         <Github className="w-5 h-5 text-text-soft hover:text-text" />
                     </a>
-                    <a href="https://www.linkedin.com/in/kushagra-bisht" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/kushagrabisht05/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                         <Linkedin className="w-5 h-5 text-text-soft hover:text-text" />
                     </a>
                 </div>

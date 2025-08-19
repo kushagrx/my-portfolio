@@ -22,7 +22,7 @@ const Contact = () => {
       icon: <Linkedin className="w-5 h-5" />,
       label: "LinkedIn",
       value: "linkedin.com/in/kushagra-bisht",
-      href: "https://www.linkedin.com/in/kushagra-bisht-29984b27a/",
+      href: "https://www.linkedin.com/in/kushagrabisht05/",
       color: "from-blue-500 to-blue-700",
     },
     {

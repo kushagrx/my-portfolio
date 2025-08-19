@@ -5,21 +5,21 @@ import { Navigation, Brain, Smartphone, Database, ExternalLink } from 'lucide-re
 const Projects = () => {
   const projects = [
     {
-      name: "Campus Navigation System",
-      stack: ["React", "CSS", "Java Spring Boot", "Graph Theory"],
-      description: "Engineered a campus navigation tool using Dijkstra's algorithm to optimize routes and reduce travel time across campus locations.",
+      name: "Subscription Tracker API",
+      stack: ["Node.js", "Express.js", "MongoDB", "REST API"],
+      description: "Comprehensive API for tracking and managing subscription services with automated billing reminders and expense analytics.",
       highlights: [
-        "Dynamic graph model of campus layout",
-        "Efficient route computations with real-time updates",
-        "Interactive map interface with turn-by-turn directions",
+        "RESTful API with full CRUD operations for subscription management",
+        "Automated notification system for upcoming renewals",
+        "Analytics dashboard for subscription spending insights",
       ],
-      icon: <Navigation className="w-6 h-6" />,
-      color: "from-blue-500 to-cyan-500",
-      link: "https://github.com/vansh1306/campus-navigation-system",
+      icon: <Database className="w-6 h-6" />,
+      color: "from-orange-500 to-red-500",
+      link: "https://github.com/kushagrx/SubscriptionTrackerProject",
     },
     {
       name: "Cloud Based Knowledge Management System",
-      stack: ["Cloud", "NLP", "Transformers", "IBM Watson"],
+      stack: ["IBM Collaboration","AWS Cloud", "Natural Language Processing", "AI Based Summarization"],
       description: "Scalable knowledge management platform to organize and retrieve large volumes of corporate data with IBM collaboration.",
       highlights: [
         "AI summarization engine using transformer-based models",
@@ -42,20 +42,20 @@ const Projects = () => {
       icon: <Smartphone className="w-6 h-6" />,
       color: "from-green-500 to-emerald-500",
       link: "https://github.com/kushagrx/MobileAppDev/tree/master/apptest05",
-    },
-    {
-      name: "Subscription Tracker API",
-      stack: ["Node.js", "Express.js", "MongoDB", "REST API"],
-      description: "Comprehensive API for tracking and managing subscription services with automated billing reminders and expense analytics.",
-      highlights: [
-        "RESTful API with full CRUD operations for subscription management",
-        "Automated notification system for upcoming renewals",
-        "Analytics dashboard for subscription spending insights",
-      ],
-      icon: <Database className="w-6 h-6" />,
-      color: "from-orange-500 to-red-500",
-      link: "#",
-    },
+    }
+    // {
+    //   name: "Campus Navigation System",
+    //   stack: ["React", "CSS", "Java Spring Boot", "Graph Theory"],
+    //   description: "Engineered a campus navigation tool using Dijkstra's algorithm to optimize routes and reduce travel time across campus locations.",
+    //   highlights: [
+    //     "Dynamic graph model of campus layout",
+    //     "Efficient route computations with real-time updates",
+    //     "Interactive map interface with turn-by-turn directions",
+    //   ],
+    //   icon: <Navigation className="w-6 h-6" />,
+    //   color: "from-blue-500 to-cyan-500",
+    //   link: "https://github.com/vansh1306/campus-navigation-system",
+    // }
   ];
 
   const containerVariants = {
