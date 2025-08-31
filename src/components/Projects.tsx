@@ -41,7 +41,7 @@ const Projects = () => {
       ],
       icon: <Smartphone className="w-6 h-6" />,
       color: "from-green-500 to-emerald-500",
-      link: "https://github.com/kushagrx/MobileAppDev/tree/master/apptest05",
+      link: "https://github.com/kushagrx/GTD-Mobile-App",
     }
     // {
     //   name: "Campus Navigation System",
